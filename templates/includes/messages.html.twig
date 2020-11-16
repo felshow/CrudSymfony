@@ -1,0 +1,9 @@
+{% for msg in app.session.flashbag.get ('success') %}
+    {{ msg }}
+{% endfor %}
+{% for msg in app.session.flashbag.get ('warning') %}
+    {{ msg }}
+{% endfor %}
+{% for msg in app.session.flashbag.get ('error') %}
+    {{ msg }}
+{% endfor %}
